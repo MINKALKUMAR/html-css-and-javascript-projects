@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box:first-child{
+    background-color: red;
+
+}
+.box:first-line{
+    background-color: yellow;
+}

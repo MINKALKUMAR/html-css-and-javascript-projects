@@ -1,0 +1,45 @@
+h1{
+    padding: 5px;
+}
+p{
+    padding: 5px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+h2{
+    padding: 5px;
+}
+.skillItem{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight:900 ;
+}
+.skill{
+    width: 134px;
+    height: 8px;
+    background-color: rgb(0, 255, 21);
+  border-radius: 5px;
+  border: 2px solid rgb(125, 26, 138);
+
+}
+.fifty{
+    width: 65px;
+   
+}
+.fourty{
+    width: 50px;
+    background-color: lightblue;
+}
+.eighty{
+    width: 120px;
+    background-color:orange ;
+}
+.ten{
+    width: 20px;
+    background-color: red;
+}
+.main-box{
+    padding: 44px;
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary: #41185c;
+    --primary-dark:#14001d;
+     --green:#088104;
+     --red:#ff0000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "poppins";
+}
+body{
+    background-color:var(--primary);
+}
+.container{
+   display: grid;
+   height: 100vh;
+   place-items: center;
+}
+.box{
+     background-color: var(--primary-dark);
+     width: 400px;
+     height: 100vh;
+     padding:0px 10px;
+     color: white;
+     position: relative;
+}
+h1{
+    font-weight: 600px;
+    font-size: 25px ;
+}
+h2{
+    font-weight: 200px;
+    font-size: 15px ;
+}
+h3{
+    font-weight: 200px;
+    font-size: 14px ;
+}
+.box-upper,.balance{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.balance{
+       margin: 10px;
+}
+.transactions{
+margin-top: 10px;
+display: flex;
+flex-direction:column;
+gap: 6px;
+}
+.transaction{
+    background-color: white;
+    color: black;
+
+    display: flex;
+}
+.transaction .left{
+display: flex;
+justify-content: space-between;
+flex-grow:1;
+padding: 5px;
+align-items: center;
+}
+.status{
+display: grid;
+place-items: center;
+min-height: 35px;
+min-width: 35px;
+color: white;
+
+}
+.credit{
+    background-color: var(--green);
+
+}
+.debit{
+    background-color: var(--red);
+
+}
+.transaction-form{
+    background-color: white;
+    /* height: 150px; */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    padding: 10px;
+}
+.transaction-form h3{
+    margin-bottom: 5px;
+}
+.form-controll{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-controll:first-child{
+    flex: 2;
+}
+.inputs{
+    display: flex;
+gap: 2px;
+
+}
+form input{
+    padding: 5px 10px;
+    outline: 1px solid transparent;
+    width: 100%;
+    margin: 0px;
+
+}
+form input:focus-visible{
+    outline: 1px solid var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+}
+.button-container{
+    display: flex;
+    margin: 8px;
+}
+.button-container button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    color: white;
+    opacity: .8;
+    transition: .2s ease-in-out;
+}
+.button-container button:hover{
+   opacity: 1;
+   transition: .2s ease-in-out;
+}
+#earnbtn{
+    background-color: var(--green);
+}
+#expbtn{
+    background-color: var(--red);
+}
+@media (max-width:450px){
+    .box{
+        width: 100%;
+    }
+}

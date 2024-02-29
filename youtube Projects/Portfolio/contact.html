@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minkal-developer portfolio</title>
+    
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="intro.css" />
+    <link rel="stylesheet" href="blog.css" />
+  
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebarGo">
+        <nav>
+          <ul>
+            <li><a href="" >Home </a></li>
+            <li><a href="/intro.html"> My intro </a></li>
+            <li><a href="/service.html" > Services</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="hamburger">
+          <img class="ham" src="ham.png" alt="hamburger" width="23px">
+          <img class="cross" src="cross.png" alt="cross" width="22px">
+        </div>
+       <div class="contactForm">
+        <h1>Contact me for work/general Enquiries</h1>
+        <form>
+          <div class="mb-3">
+            <label for="clientName" class="form-label">Enter your name</label>
+            <input type="email" class="form-control" id="clientName">
+          <div class="mb-3">
+            <label for="clientEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email & Phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientEnquries" class="form-label">Enquries</label>
+            <input type="text" class="form-control" id="clientEnquries">
+          <div class="mb-3">
+            <label for="clientPhone" class="form-label">Phone</label>
+            <input type="Phone" class="form-control" id="clientPhone">
+          </div>
+          <div class="mb-2" id="form-check" >
+            <input type="checkbox" id="form-check-input" id="isClient">
+            <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+       </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

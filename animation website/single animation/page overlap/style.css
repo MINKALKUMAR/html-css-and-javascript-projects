@@ -1,0 +1,74 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(48, 46, 46);
+    position: relative;
+    top:0;
+}
+.main-text{
+    height: 40vh;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.main-text p{
+    width: 50%;
+    
+}
+.card{
+    height: 80vh;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-size: cover;
+   background-position: center;
+   border-radius: 25px;
+
+}
+#card1{
+    top:130%;
+    
+    background-color: rgb(199, 156, 99);
+    background-image: url("https://img.freepik.com/free-vector/sale-landing-page-template-with-photo_23-2148271149.jpg?size=626&ext=jpg&ga=GA1.1.604574010.1701785824&semt=ais");
+}
+#card2{
+    top:230%;
+    background-color: rgb(53, 34, 136);
+    background-image: url("https://img.freepik.com/free-psd/shoes-sale-social-media-post-square-banner-template-design_505751-2860.jpg?size=626&ext=jpg&ga=GA1.1.604574010.1701785824&semt=ais") ;
+}
+#card3{
+    top:250%;
+    background-color: rgb(79, 167, 45);
+    background-image: url("https://img.freepik.com/free-psd/shoes-sale-social-media-post-square-banner-template-design_505751-3764.jpg?size=626&ext=jpg&ga=GA1.1.604574010.1701785824&semt=ais");
+}
+
+/* @media (max-width:500px) {
+    .card{
+        height: 40vh;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       background-size: cover;
+       background-position: center;
+       border-radius: 15px;
+    
+    }
+} */

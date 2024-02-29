@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 8;
+    mix-blend-mode: difference;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    transform: .3s;
+
+}
+
+.main {
+    background-color: #0f0D0D;
+}
+
+/**********************************PAGE 1 START********/
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 9vw;
+
+
+}
+
+#nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 99;
+    mix-blend-mode: difference;
+}
+
+#purple {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+    background-color: rgb(170, 106, 156);
+    display: none;
+    opacity: 0;
+}
+
+#nav img {
+    height: 25px;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+#circle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+#nav-part2 h4:nth-child(1) {
+    border-bottom: 2px solid red;
+}
+
+#nav-part2 h4:hover {
+    border-bottom: 2px solid red;
+}
+
+.page1 h1 {
+    font-size: 7vw;
+    margin-left: 4vw;
+    font-family: sans-serif;
+}
+
+.page1 h2 {
+    font-size: 7vw;
+    font-family: sans-serif;
+    margin-left: 25vw;
+}
+
+.page1 video {
+    width: 60%;
+    background-color: aqua;
+    margin-top: 8vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+/**********************************PAGE 2 START********/
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2vw 3vw;
+    border-bottom: 2px solid rgb(80, 79, 79);
+    position: relative;
+    z-index: 9;
+
+
+}
+
+.page2 h1 {
+
+    font-size: 6vw;
+    color: black;
+}
+
+.page2-container {
+    height: 40vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+
+}
+
+.page2-left {
+    width: 36%;
+
+
+}
+
+.page2-right {
+    width: 30%;
+
+}
+
+.page2-left h2 {
+    font-size: 3.8vw;
+    color: black;
+}
+
+.page2-right p {
+    font-size: 22px;
+    color: black;
+}
+
+.page2-right button {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 50px;
+    color: black;
+    border: none;
+    padding: 5px;
+    background-color: rgb(153, 140, 140);
+
+}
+
+/**********************************PAGE 3 START********/
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    border-bottom: 2px solid rgb(77, 74, 74);
+    padding: 0 2%;
+}
+
+.page3 h1 {
+    font-size: 8vw;
+    color: black;
+    margin: 3vw 0 2vw 3vw;
+}
+
+.page3-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.page3 img {
+    height: 300px;
+    margin-top: 80px;
+
+}
+
+.page3 video {
+    height: 300px;
+}
+
+/**********************************PAGE 4 START********/
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    margin-top: 200px;
+
+}
+
+.elem {
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.text-div {
+    font-family: sans-serif;
+    /* background-color: lightblue; */
+    height: 90px;
+
+    overflow: hidden;
+
+    transition: all ease-out .5s;
+
+}
+
+.elem img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1) {
+    position: absolute;
+    left: 2%;
+}
+
+.elem img:nth-child(3) {
+    position: absolute;
+    right: 2%;
+}
+
+.elem h1 {
+    font-size: 5.5vw;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1 {
+    transform: translateY(-100%);
+    color: red;
+}
+
+.elem:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
+
+/**********************************PAGE 5 START********/
+
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+
+}
+
+.page5 h2 {
+    font-size: 4vw;
+    padding: 100px;
+
+}
+
+.box {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dadada;
+    padding: 5px 10px;
+    margin: 0 6%;
+}
+
+.box:nth-last-child(1) {
+    border-bottom: 1px solid #dadada;
+}
+
+/**********************************FOOTER START********/
+.footer {
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(189, 255, 233); */
+}

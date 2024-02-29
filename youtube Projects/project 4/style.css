@@ -1,0 +1,148 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-section {
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.text-container {
+    color: white;
+    max-width: 900px;
+    margin: 0% auto;
+    padding-top: 64px;
+    padding-left: 16px;
+}
+
+.lg-text {
+
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+.hi {
+    color: aqua;
+}
+
+.black-box {
+    height: 200px;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    font-size: 55px;
+    padding-top: 40px;
+    padding-left: 250px;
+    font-weight: 300;
+
+
+}
+
+span {
+    font-size: 100px;
+    font-weight: 350;
+}
+
+.work {
+    display: flex;
+    margin-top: 80px;
+    justify-content: left;
+    margin-bottom: 50px;
+
+    margin-left: 120px;
+    margin-right: 100px;
+
+}
+
+.card {
+    height: 420px;
+    width: 280px;
+
+    box-shadow: 0.5px 3px 2px 2px rgba(56, 55, 55, 0.4);
+    border-radius: 10px;
+    margin-left: 35px;
+
+    transition: 0.3s ease-in-out;
+
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0.5px 3px 2px 2px rgba(56, 55, 55, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.section-bottom {
+    display: flex;
+
+
+}
+
+.contact {
+    background-color: #515603;
+}
+
+.about {
+    background-color: #722300;
+}
+
+.contact,
+.about {
+    min-height: 300px;
+    padding: 32px;
+    color: white;
+
+}
+
+.contact h2,
+.about h2 {
+    font-size: 64px;
+    font-weight: 300;
+
+}
+
+.contact p,
+.about p {
+    margin-bottom: 20px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+
+
+}
+
+footer:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}

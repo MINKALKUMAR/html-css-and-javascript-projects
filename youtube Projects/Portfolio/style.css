@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: rgb(230, 221, 221);
+    width: 230px;
+    height: 100vh;
+    transition: transform .3s ease-in;
+    position: absolute;
+}
+.sidebar nav{
+    padding:23px;
+    position: absolute;
+    top: 15px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 15px 0px 15px 0px;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color: black;
+   
+}
+.main{
+    /* background-color: yellow; */
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+}
+.infoContainer{
+    /* background-color: rgb(255, 153, 0); */
+    height: 50vh;
+    width: 75vw;
+    margin:75px auto ;
+    display: flex;
+    justify-content:space-around ;
+    font-size: 20px;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid black; */
+}  
+.devPic img{
+    height:50vh;
+    margin-left: 5px;
+   
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.hello{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.name{
+font-size: 2.1em;
+font-weight: 700;
+}
+.about{
+font-size: 1.5em;
+font-family: monospace;
+font-weight: 600;
+}
+.moreAbout{
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.buttons button{
+    color: white;
+    border-radius: 14px;
+    background-color: #2baeff;
+    margin-top: 20px;
+    padding: 5px;
+    margin-left: 15px;
+    font-weight: 700;
+    border-color: #2baeff;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: #2baeff;
+}
+.buttons button:active{
+    background-color: #0e5683;
+} 
+.hamburger{
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.cross{
+    margin-left: 175px;
+    margin-top: 10px;
+}
+.ham{
+    margin-top: 10px;
+}
+
+.sidebarGo{
+    transform: translate(-350px, 0px);
+    /* margin-left: 45px; */
+position: absolute;
+
+
+}
+@media (max-width:1145px){
+    /* *{
+        background-color: red; */
+        /* transform: translate(15px, 0px);
+    } */
+    .devPic{
+        display: none;
+    }
+    /* .sidebar{
+        transform: translate(-350px, 0px);
+        margin-left: 45px;
+    position: absolute;
+    } */
+}
+@media (max-width:640px){
+   .infoContainer{
+      flex-wrap: wrap;
+      font-size: 18px;
+   }
+}
+@media (max-width:580px){
+   .infoContainer{
+    margin-left: 30px;
+      font-size: 16px;
+   }
+}
+
+@media (max-width:400px){
+   .infoContainer{
+    padding-left:30px;
+    padding-right: 30px;
+      font-size: 14px;
+   }
+}
+@media (max-width:300px){
+   .infoContainer{
+    padding-left:30px;
+    padding-right: 30px;
+      font-size: 12px;
+   }
+}
+@media (max-width:640px){
+    .sidebar{
+        position: absolute;
+        z-index: 5;
+    }
+}

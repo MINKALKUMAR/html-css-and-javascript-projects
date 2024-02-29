@@ -1,0 +1,37 @@
+.blogContainar {
+    margin: 20px;
+}
+
+.blogContainar h1 {
+    padding-top: 20px;
+}
+
+
+.blogItem h2{
+    padding-top: 10px;
+}
+.blogItem p{
+    padding-top: 10px;
+}
+
+.btn{
+    color: white;
+    border-radius: 14px;
+    background-color: #2baeff;
+    margin-top: 5px;
+    padding: 5px;
+    /* margin-left: 15px; */
+    font-weight: 700;
+    border-color: #2baeff;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: #2baeff;
+}
+.btn:active{
+    background-color: #0e5683;
+}
+.main-Box{
+    padding: 15px;
+}

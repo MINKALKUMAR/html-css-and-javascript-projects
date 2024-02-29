@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense--tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <section class="box-upper">
+          <h1>Expense Tracker</h1>
+          <div class="balance">
+            <h2>₹0</h2>
+            <h3>Your balance</h3>
+          </div>
+        </section>
+        <div class="transection-container">
+          <h3>Transection</h3>
+          
+          <hr />
+          <div class="transactions">
+            <div class="transaction">
+              <div class="left">
+                <p>Example text</p>
+                <p>+₹200</p>
+              </div>
+              <div class="status credit">C</div>
+            </div>
+            <div class="transaction">
+              <div class="left">
+                <p>Example text</p>
+                <p>+₹200</p>
+              </div>
+              <div class="status debit">D</div>
+            </div>
+          </div>
+        </div>
+        <section class="transaction-form">
+     <h3>
+      Add transactions
+     </h3>
+     <form  id="transactionForm">
+      <div class="inputs"><div class="form-controll">
+        <label for="text">Text</label>
+        <input type="text" id="text"  placeholder="Enter description">
+        </div>
+      <div class="form-controll">
+        <label for="Amount">Number</label>
+        <input type="number" id="Amount"   placeholder="Enter Amount">
+        </div></div>
+     <div class="button-container">
+      <button type="submit" id="earnbtn">
+        <p>₹0</p>
+        <p>Earning</p>
+      </button>
+      <button type="submit" id="expbtn">
+        <p>₹0</p>
+        <p>Expense</p>
+      </button>
+     </div>
+     </form>
+        </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

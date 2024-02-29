@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #413d3d;
+    position: relative;
+
+
+}
+
+
+.circle {
+    height: 20vw;
+    width: 20vw;
+    background-color: orange;
+    border-radius: 50%;
+
+   z-index: 9;
+}
+
+.cir {
+    height: 20vw;
+    width: 20vw;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+  
+}
+
+.cir1 {
+    animation: amime 3s linear 1s infinite;
+}
+
+ .cir2{
+    animation: amime 3s linear 1.5s infinite;
+
+}
+
+.cir3 {
+    animation: amime 3s linear 2s infinite;
+
+}
+
+@keyframes amime {
+    0% {
+        width: 0vw;
+        height: 0vw;
+        opacity: 1;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+        width: 40vw;
+        height: 40vw;
+        opacity: 0;
+    }
+}

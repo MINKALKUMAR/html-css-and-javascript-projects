@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.overlay{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.699));
+    /* display: none;
+     */
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+     justify-content: space-between;
+     position: relative;
+     padding: 0 10vw 0 20vw;
+     background-color: black;
+     color: white;
+}
+
+.text-area{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    z-index: 9;
+}
+.text-area h1{
+    font-size:1vw;
+    overflow: hidden;
+
+    /* background-color: red; */
+}
+.text-area p{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 2vw;
+    width: 100%;
+    overflow: hidden;
+}
+.text-area h1{
+    font-size: 6vw;
+    overflow: hidden;
+}
+.lineone{
+    height: 100vh;
+    width: 20%;
+    border:2px solid white;
+    overflow: hidden;
+}
+.linetwo{
+    height: 100vh;
+    width: 20%;
+    border:2px solid white;
+    overflow: hidden;
+}
+.innerline{
+    height: 200vh;
+    width: 100%;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  
+} 
+.innerline2{
+  margin-top: -100vh;
+} 
+
+#card{
+    width: 100%;
+    height: 20%;
+   
+    background-color: red;
+    border-radius: 10px;
+}
