@@ -1,0 +1,41 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+body,html{
+ height:100%;
+ width:100%;
+}
+.page{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page1{
+    background-color: aqua;
+}
+#page2{
+    background-color: rgb(18, 189, 83);
+}
+#page3{
+    background-color: rgb(13, 87, 184);
+}
+.box1{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.box2{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(238, 255, 0);
+}
+.box3{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(204, 58, 126);
+}

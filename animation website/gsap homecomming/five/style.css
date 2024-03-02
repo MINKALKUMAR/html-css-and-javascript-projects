@@ -1,0 +1,59 @@
+@font-face {
+    font-family: head;
+    src: url(heading_now/HeadingNowTrial-35Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader h1 {
+    font-size: 100px;
+    color: black;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    font-family: head;
+    /* padding: 100px; */
+    overflow: hidden;
+    position: absolute;
+}
+
+.page1 h1 {
+    font-size: 30vw;
+    border-bottom: 2px solid white;
+    white-space: nowrap;
+
+    /* background-color: red; */
+    font-stretch: 1px;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}

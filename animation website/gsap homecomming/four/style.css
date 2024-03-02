@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    padding: 0 50px;
+}
+
+
+
+#nav {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+#nav-part2 {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.container {
+    height: 60%;
+    display: flex;
+
+    margin-top: 40px;
+
+}
+
+#left {
+
+    width: 50%;
+    /* background-color: blue; */
+}
+
+#left h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(231, 20, 13), rgb(46, 241, 232), rgb(236, 50, 159), rgb(255, 217, 1)), red;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: anime 3s linear infinite;
+
+}
+
+#left h1 span img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+#left span:nth-child(2) {
+
+    margin-left: -30px;
+
+}
+
+#left span:nth-child(3) {
+
+    margin-left: -30px;
+
+}
+
+
+
+#right {
+
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right img {
+    height: 300px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.box {
+    height: 300px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.box h1 {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(to right, rgb(231, 20, 13), rgb(46, 241, 232), rgb(255, 217, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: anime 3s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        background-position: 0% 70%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+
+    100% {
+        background-position: 0% 70%;
+    }
+}
