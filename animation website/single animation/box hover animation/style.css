@@ -42,8 +42,8 @@
     height: 295px;
     width: 295px;
     border-radius: 50%;
-    visibility: visible; /* Show box1 on hover */
-    transform: scale(350px); /* Scale up */
+    visibility: visible;
+    transform: scale(350px);
     transition: all .5s linear ;
     color: red;
     
@@ -53,5 +53,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
+
