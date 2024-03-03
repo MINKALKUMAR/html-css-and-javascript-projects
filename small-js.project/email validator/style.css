@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    min-height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: rgb(151, 151, 151);
+
+}
+
+footer {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+}
+
+main {
+    min-height: 85vh;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    /* border: 2px solid black; */
+}
+input[type="text"]{
+    margin-top: 15px;
+    min-width:16vw;
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.button {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+
+}
+
+.button:active {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border: 2px solid black;
+
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+    
+}
+
+
+@media (max-width:600px) {
+    .container h1 {
+        font-size: 5vw;
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width:500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        padding: 10px;
+
+    }
+
+    .container h1 {
+        font-size: 5vw;
+        padding: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .container {
+        max-width: 100%;
+
+    }
+
+    .container h1 {
+        font-size: 17px;
+        text-align: center;
+
+    }
+    #resultCont div{
+        font-size:6vw;
+    }
+}
