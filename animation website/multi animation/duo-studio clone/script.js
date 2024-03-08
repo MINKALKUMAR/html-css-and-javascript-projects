@@ -150,5 +150,5 @@ heading.forEach((elem)=>{
      elem.addEventListener("mouseleave",()=>{
       purple.style.display="none";
       purple.style.opacity="0";
-     })
+     }) 
 })

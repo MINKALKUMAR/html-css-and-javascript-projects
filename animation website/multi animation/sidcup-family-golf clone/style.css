@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: mont;
+
+}
+
+@font-face {
+    font-family: mont;
+    src: url("/Montserrat-Black.ttf");
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#nav img {
+    height: 50px;
+}
+
+#nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 80px;
+    /* background-color: red; */
+    font-weight: 0;
+    font-size: 1vw;
+    position: fixed;
+
+    z-index: 99;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    position: fixed;
+    z-index: 99;
+    mix-blend-mode: difference;
+}
+
+.cursor-b {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgba(153, 205, 50, 0.5);
+    position: fixed;
+    z-index: 9;
+    filter: blur(30px);
+
+}
+
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.582);
+
+
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+.page1 h1 {
+    font-size: 7vw;
+    position: relative;
+    background: linear-gradient(to right, red, yellow, red, green);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: anim 10s linear infinite;
+    ;
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0 70%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 70% 0;
+    }
+}
+
+
+.page1 h1::before {
+    position: absolute;
+    content: "EAT. DRINK. PLAY.";
+    color: black;
+    -webkit-text-stroke: 1px yellowgreen;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+}
+
+.page1 h2 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.page1 p {
+    width: 50%;
+    font-size: 14px;
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    z-index: 9;
+}
+
+.scroller1 h1:hover {
+    color: yellowgreen;
+    transition: all .4s ease-in;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller1 {
+    font-size: 45px;
+
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+.scroller1 h1 {
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-text-stroke: 2px yellowgreen;
+    color: transparent;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+.about {
+    height: 60%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.about img {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+z-index: 10;
+
+}
+
+.about-section {
+    padding: 0 30px;
+    text-align: center;
+    width: 60%;
+z-index: 10;
+
+}
+
+.cards {
+    height: 500px;
+    /* background-color: blue; */
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease-out;
+
+}
+
+#card1 {
+    background-image: url("https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdyb3VuZCUyMGdhbWUlMjBzfGVufDB8fDB8fHww");
+}
+
+#card2 {
+    background-image: url("https://images.unsplash.com/photo-1591806014344-ad7a3b90ce13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGdyb3VuZCUyMGdhbWUlMjBzfGVufDB8fDB8fHww");
+}
+
+#card3 {
+    background-image: url("https://images.unsplash.com/photo-1615912022064-b7db9ff2133d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGdyb3VuZCUyMGdhbWUlMjBzfGVufDB8fDB8fHww");
+}
+
+.overlay {
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(81, 209, 49);
+    /* z-index: 9; */
+    border-radius: 20px;
+    opacity: 0;
+    bottom: -100%;
+    
+}
+
+.overlay h2 {
+    margin-top: 20px;
+    font-size: 14px ;
+    color: black;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.overlay p {
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.card:hover .overlay {
+    opacity: .9;
+    bottom: 0;
+    transition: all .5s ease-out;
+}
+.card:hover{
+    transform: skew(4deg, 2deg );
+    transition: all .5s ease-out;
+
+}
