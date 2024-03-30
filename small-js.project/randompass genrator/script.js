@@ -29,10 +29,21 @@ const genratepass = (password = "") => {
     password += getrandom(numberset);
   }
   if (password.length < totalchar.value) {
-     genratepass();
+    return genratepass(password);
   }
-  console.log(password);
+
+  passbox.innerHTML = truncateString(password, totalchar.value);
 };
 btn.addEventListener("click", () => {
   genratepass();
 });
+
+function truncateString(str, num) {
+  if (str.length > num) {
+    let substring = str.substring(0, num);
+    return substring;
+  } else {
+    return str;
+  }
+}
+genratepass();
